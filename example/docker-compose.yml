@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  nginx:
+    image: stephaneklein/nginx-brotli:1.23.4
+    ports:
+      - 80:80
+    volumes:
+      - ./html/:/usr/share/nginx/html/
